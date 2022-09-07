@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="531.0" prefWidth="367.0" stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="cr.ac.una.proyecto1.controller.AcercaDeViewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="65.0" layoutY="73.0" spacing="30.0" styleClass="jfx-AcercaDe" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Programacion 2">
+               <styleClass>
+                  <String fx:value="jfx-NuevoJuego-Label" />
+                  <String fx:value="jfx-AcercaDe-label" />
+               </styleClass>
+            </Label>
+            <Label text="Estudiantes:">
+               <styleClass>
+                  <String fx:value="jfx-NuevoJuego-Label" />
+                  <String fx:value="jfx-AcercaDe-label" />
+               </styleClass>
+            </Label>
+            <Label text="Kevin Arauz Jimenez">
+               <styleClass>
+                  <String fx:value="jfx-NuevoJuego-Label" />
+                  <String fx:value="jfx-AcercaDe-label" />
+               </styleClass>
+            </Label>
+            <Label text="Anthony Avila Hernandez">
+               <styleClass>
+                  <String fx:value="jfx-NuevoJuego-Label" />
+                  <String fx:value="jfx-AcercaDe-label" />
+               </styleClass>
+            </Label>
+            <Label text="I ciclo 2022">
+               <styleClass>
+                  <String fx:value="jfx-NuevoJuego-Label" />
+                  <String fx:value="jfx-AcercaDe-label" />
+               </styleClass>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

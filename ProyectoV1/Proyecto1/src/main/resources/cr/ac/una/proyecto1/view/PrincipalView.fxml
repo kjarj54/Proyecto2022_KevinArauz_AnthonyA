@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0" styleClass="jfx-PrincipalFondo" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.proyecto1.controller.PrincipalViewController">
+   <left>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnNuevoJuego" onAction="#OnActionBtnNuevoJuego" prefHeight="50.0" prefWidth="100.0" styleClass="jfx-btn-Nuevo" text="Nuevo Juego">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnCargarPartida" onAction="#OnActionBtnCargarPartida" prefHeight="50.0" prefWidth="100.0" styleClass="jfx-btn-Cargar" text="Cargar Partida">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnJugadores" onAction="#onActionBtnJugadores" prefHeight="50.0" prefWidth="100.0" styleClass="jfx-btn-Acerca" text="Jugadores">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnSalir" onAction="#onActionBtnSalir" prefHeight="50.0" prefWidth="100.0" styleClass="jfx-btn-Acerca" text="Salir">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnAcercaDe" onAction="#onActionBtnAcercaDe" prefHeight="50.0" prefWidth="100.0" styleClass="jfx-btn-Acerca" text="Acerca de">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="jfx-inicios-label-titulo" text="SCRABBEL" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

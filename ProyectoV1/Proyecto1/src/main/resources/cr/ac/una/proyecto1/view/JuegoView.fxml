@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="rootJuego" prefHeight="700.0" prefWidth="1350.0" styleClass="rootJuegoView" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.proyecto1.controller.JuegoViewController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="595.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Puntaje" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lbJugador1">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbPuntaje1">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbJugador2">
+                           <HBox.margin>
+                              <Insets left="25.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbPuntaje2">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lbJugador3">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbPuntaje3">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbJugador4">
+                           <HBox.margin>
+                              <Insets left="25.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbPuntaje4">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Turno de:">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lbTurno">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnPasar" onAction="#onActionBtnPasar" styleClass="command-button" text="Pasar">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnJugar" onAction="#onActionBtnJugar" styleClass="command-button" text="Jugar">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnGuardarYsalir" onAction="#onActionBtnGuardarYsalir" styleClass="command-button" text="Guardar y salir">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAyuda" onAction="#onActionBtnAyuda" styleClass="command-button" text="Ayuda">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSalir" onAction="#onActionSalir" styleClass="command-button" text="Salir">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+         <center>
+            <VBox prefHeight="600.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane fx:id="gpTabla" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" VBox.vgrow="ALWAYS">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="gpBaraja" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" VBox.vgrow="ALWAYS">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

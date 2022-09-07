@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" styleClass="rootCargarPartidaView" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.proyecto1.controller.CargarPartidaViewController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="jfx-NuevoJuego-Label" text="Cargar Partida">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <ScrollPane prefHeight="350.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="325.0" />
+        </content>
+      </ScrollPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="350.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" styleClass="jfx-NuevoJuego-Label" text="Detalles de la partida" />
+            <JFXButton fx:id="btnCargar" layoutX="100.0" layoutY="292.0" onAction="#onActionCargar" styleClass="jfx-startbutton" text="Cargar" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

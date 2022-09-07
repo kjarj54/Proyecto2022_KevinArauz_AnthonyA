@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="650.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.proyecto1.controller.TablaDeJugadoresViewController">
+   <children>
+      <TableView fx:id="rootTableView" layoutX="168.0" layoutY="66.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="nombresColum" minWidth="50.0" prefWidth="225.0" text="Nombre" />
+          <TableColumn fx:id="partidasGanadasColum" prefWidth="175.0" text="Partidas Ganadas" />
+            <TableColumn fx:id="partidasJugadasColum" minWidth="0.0" prefWidth="175.0" text="Partidas Jugadas" />
+            <TableColumn fx:id="eliminarColumn" minWidth="0.0" prefWidth="70.0" text="Eliminar" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnNuevo" layoutX="14.0" layoutY="361.0" onAction="#onActionBtnNuevo" prefHeight="32.0" prefWidth="90.0" styleClass="jfx-btn-NuevoUsu" text="Crear Nuevo" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+   </children>
+</AnchorPane>

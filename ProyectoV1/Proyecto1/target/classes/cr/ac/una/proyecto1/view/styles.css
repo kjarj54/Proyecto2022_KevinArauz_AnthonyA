@@ -1,0 +1,319 @@
+/************************************
+
+            Botones
+
+***********************************/
+
+.jfx-startbutton{
+    -fx-font-size: 20px;
+    -fx-font-veight: bold;
+    -fx-text-fill: white;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment: CENTER ;  
+    -fx-background-color: #32043E;   
+}
+.jfx-startbutton-circular{
+    -fx-font-size: 20px;
+    -fx-font-veight: bold;
+    -fx-text-fill: white;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment: CENTER ;  
+    -fx-background-color: #32043E ;
+    -fx-background-radius: 5em;
+}
+
+.jfx-btn-Nuevo{
+    -fx-background-color: white;
+    -fx-font-veight: bold;
+    -fx-text-fill: black;
+}
+
+.jfx-btn-NuevoUsu{
+    -fx-background-color: #2196F3;
+    -fx-font-veight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+.jfx-btn-Cargar{
+    -fx-background-color: white;
+    -fx-font-veight: bold;
+    -fx-text-fill: black;
+}
+
+.jfx-btn-Acerca{
+    -fx-background-color: white;
+    -fx-font-veight: bold;
+    -fx-text-fill: black;
+}
+
+.jfx-btnimg-Nuevo{
+    -fx-alignment:CENTER;
+    -fx-content-display:graphic-only;
+    -fx-background-color: green;
+}
+
+.jfx-btnimg-agregar{
+    -fx-alignment:CENTER;
+    -fx-content-display:graphic-only;
+    -fx-background-color: #2196F3;
+}
+
+.jfx-btnimg-tbvEliminar{
+    -fx-opacity: 0.8;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-color: #f44336;
+    -fx-background-image : url("../resources/Eliminar-48.png");
+}
+.jfx-btnimg-tbvEditar{
+    -fx-opacity: 0.8;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-color: green;
+    -fx-background-image : url("../resources/Editar.png");
+}
+.jfx-btnimg-Nuevo > ImageView, .jfx-btnimg-agregar > ImageView{-fx-image: url("../resources/Agregar-48.png");}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            
+                Etiquetas 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.jfx-inicios-label{
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: #ffffff;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);    
+}
+.jfx-NuevoJuego-Label{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-font-veigth: bold;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);    
+}
+
+.jfx-inicios-label-titulo{
+    -fx-font-size: 50.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: #ffffff;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);    
+}
+
+.jfx-AcercaDe-label{
+    -fx-font-size: 20 px;
+    -fx-text-fill: #ffffff;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(5, 6, 4, 1), 2, 0.0, 1, 2);
+}
+
+.jfx-Busqueda-Label{
+    -fx-font-size: 20 px;
+    -fx-text-fill: #ffffff;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(5, 6, 4, 1), 2, 0.0, 1, 2);
+}
+
+/************************************
+
+            Fondos
+
+************************************/
+
+.jfx-inicioFondo{
+   -fx-background-image:url(../resources/Portada_Scrabble.jpg);
+   -fx-background-position: center center;
+}
+.jfx-PrincipalFondo{
+   -fx-background-image:url(../resources/FondoPrincipal.jpg);
+   -fx-background-position: center center;
+   -fx-background-attachment: fixed;
+   -fx-background-size: cover;
+   -fx-background-size: 100%;
+   -fx-background-color: #66999;
+}
+.jfx-NuevoJuego-CargarPartida{
+   -fx-background-color: #ffffff;
+   -fx-opacity: 0.87;
+}
+
+.jfx-AcercaDe{
+   -fx-background-color: black;
+   -fx-opacity: 0.87;
+}
+
+
+.game-grid{
+    -fx-background-color: white ;
+    -fx-padding: 10 ;
+}
+
+/************************************
+
+        TablaDeJugadoresView
+
+************************************/
+
+.table-cell {     
+    -fx-padding: 0.5em 0.5em 0.1em 0.3em;
+    -fx-border-color: -fx-box-border -fx-box-border transparent transparent;  
+    -fx-font: 13px "Segoe UI";    
+    -fx-border-insets: 0;
+}
+
+.table-cell:hover {
+    -fx-background-color: bcb7b7;
+}
+
+.table-row-cell:empty, .table-cell:empty:hover {
+    -fx-background-color: whitesmoke;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+.table-row-cell{
+    -fx-font-size: 10pt;
+}
+
+.table-view:row-selection .table-row-cell:filled:hover { 
+    -fx-background-color: #6b6a6a;
+}
+
+.table-view:row-selection .table-row-cell:filled:selected { 
+    -fx-background-color: #6b6a6a;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button {
+    -fx-background-color: white;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: 0;
+}
+
+/************************************
+
+            NuevoJuegoView
+
+************************************/
+
+.rootJuegoNuevoView {
+    -fx-base: #1f1f1f;
+    -fx-accent: white;
+    -fx-focus-color: -fx-accent;
+    -fx-background: derive(-fx-base, 20%);
+    -fx-control-inner-background: derive(-fx-base, 50%);
+
+    -fx-font-size: 10pt;
+    -fx-font-color: white;
+    -fx-font-family: Verdana;        
+}
+
+.jfx-txts {
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+    -jfx-focus-color: #ffffff;
+}
+.jfx-txts .input-line
+{
+    -fx-background-color: #ffffff;
+}
+    
+/************************************
+
+            Vista Juego
+
+************************************/
+
+.player-turn {
+    -fx-background-color: derive(-fx-base, 20%);
+    -fx-background-radius: 15;
+    -fx-border-color: -fx-accent;
+    -fx-border-radius: 15;
+    -fx-font-size: 10pt;
+}
+
+.tile-points {
+    -fx-font-size: 6pt;
+}
+
+.command-button {
+    -fx-background-color: derive(-fx-base, 10%);
+    -fx-background-radius: 15;
+}
+.command-button:focused {
+    -fx-border-color: -fx-accent;
+    -fx-border-radius: 15;
+    -fx-focus-text-color: -fx-accent;
+    -fx-background-radius: 15;
+}
+.command-button:hover {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+    -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 15;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.rootJuegoView {
+    -fx-base: #1f1f1f;
+    -fx-accent: white;
+    -fx-focus-color: -fx-accent;
+    -fx-background: derive(-fx-base, 20%);
+    -fx-control-inner-background: derive(-fx-base, 50%);
+
+    -fx-font-size: 10pt;
+    -fx-font-color: white;
+    -fx-font-family: Verdana;
+}
+
+.cellGrid {
+    /* 1 pixel border around the left and bottom of each cell: */
+    -fx-background-color: #6b6a6a;
+    -fx-background-insets: 0, 0 0 1 1 ;
+    -fx-padding: 0 25 0 25;
+    -fx-border-color: #1f1f1f;
+}
+    
+/************************************
+
+            BusquedaView
+
+************************************/
+
+.rootBusquedaView {
+    -fx-background-color: #515151;
+}
+
+/************************************
+
+            CargarPartidaView
+
+************************************/
+
+.rootCargarPartidaView {
+    -fx-base: #1f1f1f;
+    -fx-accent: white;
+    -fx-focus-color: -fx-accent;
+    -fx-background: derive(-fx-base, 20%);
+    -fx-control-inner-background: derive(-fx-base, 50%);
+
+    -fx-font-size: 10pt;
+    -fx-font-color: white;
+    -fx-font-family: Verdana;
+}

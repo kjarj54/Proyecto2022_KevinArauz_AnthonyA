@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="650.0" styleClass="rootJuegoNuevoView" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.proyecto1.controller.NuevoJuegoViewController">
+   <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="650.0">
+         <children>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="jfx-NuevoJuego-Label" text="Dificultad" />
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXRadioButton fx:id="rbJovenes" text="Jovenes">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="tggDificultad" />
+                                 </toggleGroup>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="rbAdultos1" text="Adultos" toggleGroup="$tggDificultad">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="600.0" />
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label styleClass="jfx-NuevoJuego-Label" text="Jugadores (Minimo 2 jugadores)" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="btnAgregar" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" onAction="#onActionBtnAgregar" styleClass="jfx-btnimg-agregar">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" smooth="false" />
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <Label text="Cargar jugador">
+                                 <HBox.margin>
+                                    <Insets right="50.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <JFXButton fx:id="btnNuevo" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" onAction="#onActionBtnNuevo" styleClass="jfx-btnimg-Nuevo">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" smooth="false" />
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <Label text="Crear Nuevo">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="btnEliminar1" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" onAction="#onActionBtnEliminar1" styleClass="jfx-btnimg-tbvEliminar" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtJugador1" editable="false" focusColor="#6b6a6a" labelFloat="true" prefWidth="150.0" promptText="Jugador1" styleClass="jfx-txts" unFocusColor="BLACK">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="85.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXButton fx:id="btnEliminar2" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" onAction="#onActionBtnEliminar2" styleClass="jfx-btnimg-tbvEliminar" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtJugador2" editable="false" focusColor="WHITE" labelFloat="true" prefWidth="150.0" promptText="Jugador2" styleClass="jfx-txts" unFocusColor="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="25.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <CheckBox mnemonicParsing="false" text="PC2">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="btnEliminar3" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" onAction="#onActionBtnEliminar3" styleClass="jfx-btnimg-tbvEliminar" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtJugador3" editable="false" focusColor="WHITE" labelFloat="true" prefWidth="150.0" promptText="Jugador3" styleClass="jfx-txts" unFocusColor="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <CheckBox mnemonicParsing="false" text="PC3">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="25.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <JFXButton fx:id="btnEliminar4" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" onAction="#onActionBtnEliminar4" styleClass="jfx-btnimg-tbvEliminar" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtJugador4" editable="false" focusColor="WHITE" labelFloat="true" prefWidth="150.0" promptText="Jugador4" styleClass="jfx-txts" unFocusColor="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="25.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <CheckBox mnemonicParsing="false" text="PC4">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Separator prefWidth="600.0" />
+                           </children>
+                        </HBox>
+                        <Label styleClass="jfx-NuevoJuego-Label" text="Duracion de la partida" />
+                        <JFXTextField fx:id="txtDuracion" promptText="Duracion en minutos" styleClass="jfx-txts" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="200.0" right="200.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Separator prefWidth="600.0" />
+                           </children>
+                        </HBox>
+                        <JFXButton fx:id="btnEmpezar" onAction="#onActionBtnEmpezar" styleClass="jfx-startbutton" text="Empezar" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

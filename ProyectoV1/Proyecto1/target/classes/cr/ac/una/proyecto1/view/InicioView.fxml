@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="jfx-inicioFondo" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.proyecto1.controller.InicioViewController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnIniciar" layoutX="225.0" layoutY="305.0" onAction="#onActionBtnIniciar" prefHeight="75.0" prefWidth="150.0" styleClass="jfx-startbutton" text="Iniciar" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" />
+            <Label alignment="CENTER" layoutX="42.0" layoutY="44.0" prefHeight="85.0" prefWidth="510.0" styleClass="jfx-inicios-label-titulo" text="Bienvenidos a Scrabble" textAlignment="CENTER" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="176.0" layoutY="245.0" prefHeight="50.0" prefWidth="250.0" styleClass="jfx-inicios-label" text="Presione para empezar" textAlignment="CENTER" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="176.0" AnchorPane.rightAnchor="174.0" />
+            <JFXButton fx:id="btnAcercaDe" layoutX="537.0" layoutY="334.0" onAction="#onActionBtnAcercaDe" prefHeight="50.0" prefWidth="50.0" styleClass="jfx-startbutton-circular" text="?" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
